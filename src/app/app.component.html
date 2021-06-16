@@ -1,17 +1,18 @@
-<!-- <app-header></app-header>
+<!-- [currentKey]="key" -->
+<app-header (keySelected)="onKeySelected($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="key === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="key !== 'recipe'"></app-shopping-list>
     </div>
   </div>
-</div> -->
+</div>
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-12">
       <app-server-app></app-server-app>
     </div>
   </div>
-</div>
+</div> -->
