@@ -14,6 +14,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ServerAppComponent } from './server-app/server-app.component';
 import { CockpitComponent } from './server-app/cockpit/cockpit.component';
 import { ServerElementComponent } from './server-app/server-element/server-element.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ServerElementComponent } from './server-app/server-element/server-eleme
     ServerAppComponent,
     CockpitComponent,
     ServerElementComponent,
+    DropdownDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
